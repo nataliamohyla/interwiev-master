@@ -1,0 +1,88 @@
+button{
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: aliceblue;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+button:hover{
+  background-color: #0056b3;
+}
+button:disabled{
+  background-color: aquamarine;
+  color: #999;
+  cursor: not-allowed;
+}
+.active{
+  background-color: #a51ee9;
+}
+.disabled{
+  background-color: #e969b8;
+  color: #999;
+  cursor: not-allowed;
+}
+.event-example {
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+.clicked{
+ background-color: #19181a;
+  color: #999;
+}
+.div{
+  background-color: #d0f1cb;
+  padding: 20px;
+
+}
+.todo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.todo-input{
+  width: 189px;
+  padding: 8px;
+  border: 1px solid gray;
+}
+.todo-list{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.add-btn{
+  width: 80px;
+  background-color: rgb(26, 98, 26);
+  color: #999;
+}
+.add-btn:hover {
+  background-color: #33b73c;
+}
+.remove-btn{
+  background-color: rgb(155, 40, 40);
+  color: #ccc;
+  width: 88px;
+}
+.remove-btn:hover{
+  background-color: red;
+}
+.todo-item{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding: 8px;
+  border-radius: 8px;
+  gap: 15px;
+}

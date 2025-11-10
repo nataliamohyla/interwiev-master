@@ -1,59 +1,44 @@
-# InterwiewMaster
+  //title = 'this is interpolacja';
+  //firstName = 'Natalia';
+  //lastName = 'Mohyla';
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+  //isEnabled: boolean = false;
 
-## Development server
+  //isActive: boolean = false;
+  //isDisabled: boolean = true;
+  //isClickedState: boolean = false;
+  //inputText: string = '';
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+ // items = [
+  //  { "id": 1, "name": "Apple" },
+  //  { "id": 2, "name": "Banana" },
+  //  { "id": 3, "name": "Pich" },
+  //  { "id": 4, "name": "Pier" },
+   // { "id": 5, "name": "Pineaple" },
+  //  { "id": 6, "name": "Kivi" },
+   // { "id": 7, "name": "Watermelon" },
+   // { "id": 8, "name": "Melon" },
+   // { "id": 9, "name": "Strawberry" },
+  //  { "id": 10, "name": "Orange" }
+ // ];
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+  //appState = 'paused';
+ // today = new Date();
+ // longText = 'Дуже довгий текст який треба відобразити';
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+  //@Input() childMessage: string = '';
+ // @Output() messageFromChild = new EventEmitter<string>()
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+ // getFullName(){
+  //  return `My name is ${this.firstName} ${this.lastName}`;
+ // }
+ // toggleState() {
+  //  this.isClickedState = true;
+  //}
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ // sendMessageToParent() {
+  //  this.messageFromChild.emit('I am your child!');
+ // }
