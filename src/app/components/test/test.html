@@ -1,6 +1,43 @@
 <div class="div">
   <p>test works!</p>
-  <div class="todo-container">
+  <!--форма-->
+  <div class="container">
+    <form [formGroup]="complexForm" (ngSubmit)="onSubmit()" class="form">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" formControlName="name" />
+        <div *ngIf="name?.invalid && name?.touched" class="error">This value is invalid</div>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" formControlName="email" />
+        <div *ngIf="email?.invalid && email?.touched" class="error">This value is invalid</div>
+      </div>
+
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" formControlName="age" />
+        <div *ngIf="age?.invalid && age?.touched" class="error">This value is invalid</div>
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" formControlName="password" />
+        <div *ngIf="password?.invalid && password?.touched" class="error">
+          This value is invalid
+        </div>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" formControlName="consent" />
+        <label> I agree to the terms and conditions</label>
+      </div>
+
+      <button type="submit" [disabled]="!complexForm.valid">Submit</button>
+    </form>
+  </div>
+  <!-- <div class="todo-container">
     <input [(ngModel)]="newTask" placeholder="Add new task" class="todo-input" />
     <button (click)="addTask()" class="add-btn">Add</button>
     <ul class="todo-list">
@@ -9,7 +46,7 @@
         <button (click)="removeTask(i)" class="remove-btn">Remove</button>
       </li>
     </ul>
-  </div>
+  </div>   -->
   <!--
   <p>{{ title }}</p>-->
 

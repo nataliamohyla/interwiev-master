@@ -42,6 +42,8 @@ button:disabled{
   color: #999;
 }
 .div{
+  display: flex;
+  flex-direction: column;
   background-color: #d0f1cb;
   padding: 20px;
 
@@ -85,4 +87,33 @@ button:disabled{
   padding: 8px;
   border-radius: 8px;
   gap: 15px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input{
+  width: 360px;
+  border: 1px solid rgb(57, 57, 57);
+  padding: 8px;
+  border-radius: 8px;
+}
+label{
+  font-weight: 700;
+  color: rgb(57, 57, 57);
+}
+div{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+}
+.error{
+  color: red;
+  font-size: small;
+  font-weight: 400;
 }
