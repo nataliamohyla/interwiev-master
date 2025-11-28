@@ -1,18 +1,27 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { TexstComponent } from './components/test/test';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { MatSidenav, MatSidenavContainer, MatSidenavContent, MatSidenavModule } from '@angular/material/sidenav';
+import { MatNavList } from '@angular/material/list';
+import { MatToolbar } from '@angular/material/toolbar';
 
 @Component({
   selector: 'app-root',
-  imports: [ TexstComponent],
+  imports: [
+    RouterLink,
+    RouterOutlet,
+    // RouterLinkActive,
+    MatSidenavContainer,
+    MatSidenavContent,
+    MatSidenav,
+    MatNavList,
+    MatToolbar,
+    MatSidenavModule,
+    RouterLinkActive
+],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('interwiew-master');
-  messageFromParent = 'Я твій батько!';
-  messageFromChild = '';
-  getMessageFromChild(message: string) {
-    this.messageFromChild = message;
-  }
+
+
 }

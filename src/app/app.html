@@ -1,3 +1,21 @@
-<h1>Це App компонент</h1>
-<p></p>
-<app-test></app-test>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" opened="true" class="example-sidenav">
+    <div class="side-bar-title">
+      <h2>Categories</h2>
+    </div>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/angular" routerLinkActive="active">Angular</a>
+      <a mat-list-item routerLink="/typescript" routerLinkActive="active">Typescript</a>
+      <a mat-list-item routerLink="/javascript" routerLinkActive="active">Javascript</a>
+      <a mat-list-item routerLink="/rxjs" routerLinkActive="active">Rxjs</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <a mat-list-item routerLink="/home" routerLinkActive="active">Interview preparation</a>
+    </mat-toolbar>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
